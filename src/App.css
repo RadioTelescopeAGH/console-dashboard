@@ -1,33 +1,113 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  background: #fff;
+  padding: 24;
+  min-height: 280px;
+  height: 100%;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dataTable {
+  position: relative;
+  margin: auto;
+  /* background: yellow; */
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.singleData {
+  /* background: green; */
+  position: relative;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.dataName {
+  position: relative;
+  height: 100%;
+  width: 70%;
+  /* background: #1890ff; */
+  background: #1890ff;
+  border-bottom: 2px solid #50a7be;
+  display: flex;
+}
+
+#dataNameTop {
+  border-top-left-radius: 3px;
+}
+
+#dataNameBottom {
+  border-bottom-left-radius: 3px;
+  border-bottom: 0px solid #3e899e;
+}
+
+.data {
+  position: relative;
+  background: #f0f2f5;
+  height: 100%;
+  width: 30%;
+  border-bottom: 2px solid #fbfcfd;
+  display: flex;
+}
+
+.textInDataName {
+  position: relative;
+  margin: auto;
+  font-size: 23px;
+  color: #f0f2f5;
+}
+
+.textInData {
+  position: relative;
+  margin: auto;
+  font-size: 23px;
+  color: #1890ff;
+}
+
+#odd {
+  background: #7ec1fc;
+}
+
+#oddText {
+  color: #7ec1fc;
+}
+
+.controlPanel {
+  position: relative;
+  margin: auto;
+  /* background: yellow; */
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.controlPanelRow {
+  position: relative;
+  /* background: green; */
+  height: 100%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonWrap {
+  position: relative;
+  margin: auto;
+}
+
+#buttonUp, #buttonLeft, #buttonDown, #buttonRight {
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  text-align: center;
 }
